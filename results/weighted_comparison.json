@@ -1,0 +1,983 @@
+{
+  "runs": [
+    {
+      "map": "official",
+      "grid": [
+        [
+          "S",
+          1,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          8,
+          3,
+          1,
+          1
+        ],
+        [
+          1,
+          8,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          8,
+          1
+        ],
+        [
+          8,
+          8,
+          1,
+          1,
+          "E"
+        ]
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        4,
+        4
+      ],
+      "m": 1,
+      "heuristic": "zero",
+      "dijkstra": 7,
+      "suboptimal": false,
+      "billing": [
+        {
+          "position": [
+            0,
+            0
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        },
+        {
+          "position": [
+            1,
+            0
+          ],
+          "entry_cost": 1,
+          "cumulative": 1
+        },
+        {
+          "position": [
+            2,
+            0
+          ],
+          "entry_cost": 1,
+          "cumulative": 2
+        },
+        {
+          "position": [
+            3,
+            0
+          ],
+          "entry_cost": 1,
+          "cumulative": 3
+        },
+        {
+          "position": [
+            3,
+            1
+          ],
+          "entry_cost": 1,
+          "cumulative": 4
+        },
+        {
+          "position": [
+            3,
+            2
+          ],
+          "entry_cost": 1,
+          "cumulative": 5
+        },
+        {
+          "position": [
+            4,
+            2
+          ],
+          "entry_cost": 1,
+          "cumulative": 6
+        },
+        {
+          "position": [
+            4,
+            3
+          ],
+          "entry_cost": 1,
+          "cumulative": 7
+        },
+        {
+          "position": [
+            4,
+            4
+          ],
+          "entry_cost": 0,
+          "cumulative": 7
+        }
+      ],
+      "cost": 7,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "expanded": 15,
+      "expansion_trace": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "map": "official",
+      "grid": [
+        [
+          "S",
+          1,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          8,
+          3,
+          1,
+          1
+        ],
+        [
+          1,
+          8,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          8,
+          1
+        ],
+        [
+          8,
+          8,
+          1,
+          1,
+          "E"
+        ]
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        4,
+        4
+      ],
+      "m": 1,
+      "heuristic": "manhattan",
+      "dijkstra": 7,
+      "suboptimal": false,
+      "billing": [
+        {
+          "position": [
+            0,
+            0
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        },
+        {
+          "position": [
+            1,
+            0
+          ],
+          "entry_cost": 1,
+          "cumulative": 1
+        },
+        {
+          "position": [
+            2,
+            0
+          ],
+          "entry_cost": 1,
+          "cumulative": 2
+        },
+        {
+          "position": [
+            3,
+            0
+          ],
+          "entry_cost": 1,
+          "cumulative": 3
+        },
+        {
+          "position": [
+            3,
+            1
+          ],
+          "entry_cost": 1,
+          "cumulative": 4
+        },
+        {
+          "position": [
+            3,
+            2
+          ],
+          "entry_cost": 1,
+          "cumulative": 5
+        },
+        {
+          "position": [
+            4,
+            2
+          ],
+          "entry_cost": 1,
+          "cumulative": 6
+        },
+        {
+          "position": [
+            4,
+            3
+          ],
+          "entry_cost": 1,
+          "cumulative": 7
+        },
+        {
+          "position": [
+            4,
+            4
+          ],
+          "entry_cost": 0,
+          "cumulative": 7
+        }
+      ],
+      "cost": 7,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "expanded": 11,
+      "expansion_trace": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "map": "official",
+      "grid": [
+        [
+          "S",
+          1,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          8,
+          3,
+          1,
+          1
+        ],
+        [
+          1,
+          8,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          8,
+          1
+        ],
+        [
+          8,
+          8,
+          1,
+          1,
+          "E"
+        ]
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        4,
+        4
+      ],
+      "m": 1,
+      "heuristic": "safe",
+      "dijkstra": 7,
+      "suboptimal": false,
+      "billing": [
+        {
+          "position": [
+            0,
+            0
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        },
+        {
+          "position": [
+            1,
+            0
+          ],
+          "entry_cost": 1,
+          "cumulative": 1
+        },
+        {
+          "position": [
+            2,
+            0
+          ],
+          "entry_cost": 1,
+          "cumulative": 2
+        },
+        {
+          "position": [
+            3,
+            0
+          ],
+          "entry_cost": 1,
+          "cumulative": 3
+        },
+        {
+          "position": [
+            3,
+            1
+          ],
+          "entry_cost": 1,
+          "cumulative": 4
+        },
+        {
+          "position": [
+            3,
+            2
+          ],
+          "entry_cost": 1,
+          "cumulative": 5
+        },
+        {
+          "position": [
+            4,
+            2
+          ],
+          "entry_cost": 1,
+          "cumulative": 6
+        },
+        {
+          "position": [
+            4,
+            3
+          ],
+          "entry_cost": 1,
+          "cumulative": 7
+        },
+        {
+          "position": [
+            4,
+            4
+          ],
+          "entry_cost": 0,
+          "cumulative": 7
+        }
+      ],
+      "cost": 7,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "expanded": 11,
+      "expansion_trace": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "map": "zero_cost_counterexample",
+      "grid": [
+        [
+          "S",
+          2,
+          "E"
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        0,
+        2
+      ],
+      "m": 0,
+      "heuristic": "zero",
+      "dijkstra": 0,
+      "suboptimal": false,
+      "billing": [
+        {
+          "position": [
+            0,
+            0
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        },
+        {
+          "position": [
+            1,
+            0
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        },
+        {
+          "position": [
+            1,
+            1
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        },
+        {
+          "position": [
+            1,
+            2
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        },
+        {
+          "position": [
+            0,
+            2
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        }
+      ],
+      "cost": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "expanded": 5,
+      "expansion_trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "map": "zero_cost_counterexample",
+      "grid": [
+        [
+          "S",
+          2,
+          "E"
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        0,
+        2
+      ],
+      "m": 0,
+      "heuristic": "manhattan",
+      "dijkstra": 0,
+      "suboptimal": true,
+      "billing": [
+        {
+          "position": [
+            0,
+            0
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        },
+        {
+          "position": [
+            0,
+            1
+          ],
+          "entry_cost": 2,
+          "cumulative": 2
+        },
+        {
+          "position": [
+            0,
+            2
+          ],
+          "entry_cost": 0,
+          "cumulative": 2
+        }
+      ],
+      "cost": 2,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "expanded": 3,
+      "expansion_trace": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "map": "zero_cost_counterexample",
+      "grid": [
+        [
+          "S",
+          2,
+          "E"
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        0,
+        2
+      ],
+      "m": 0,
+      "heuristic": "safe",
+      "dijkstra": 0,
+      "suboptimal": false,
+      "billing": [
+        {
+          "position": [
+            0,
+            0
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        },
+        {
+          "position": [
+            1,
+            0
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        },
+        {
+          "position": [
+            1,
+            1
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        },
+        {
+          "position": [
+            1,
+            2
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        },
+        {
+          "position": [
+            0,
+            2
+          ],
+          "entry_cost": 0,
+          "cumulative": 0
+        }
+      ],
+      "cost": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "expanded": 5,
+      "expansion_trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    }
+  ],
+  "adjacent_witness": {
+    "position": [
+      4,
+      3
+    ],
+    "goal": [
+      4,
+      4
+    ],
+    "true_remaining_cost": 0,
+    "raw_manhattan": 1,
+    "safe_heuristic": 0
+  },
+  "interpretation": "官方图已观察到曼哈顿高估，但本次仍返回最优7；零代价格扩展反例实际返回次优2而Dijkstra为0。该反例含0代价，不声称官方正整数地形存在次优反例。"
+}

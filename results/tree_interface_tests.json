@@ -1,0 +1,320 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "name": "official_json",
+      "expected": 5,
+      "hand_calculation": "max(min(max(3,5),max(6,9)),min(max(6,9),max(1,2))) = 5",
+      "public_value": 5,
+      "minimax": {
+        "value": 5,
+        "seconds": 1.8699996871873736e-05,
+        "nodes": 15,
+        "leaf_evaluations": 8,
+        "cutoffs": 0,
+        "leaves": [
+          {
+            "path": [
+              0,
+              0,
+              0
+            ],
+            "value": 3
+          },
+          {
+            "path": [
+              0,
+              0,
+              1
+            ],
+            "value": 5
+          },
+          {
+            "path": [
+              0,
+              1,
+              0
+            ],
+            "value": 6
+          },
+          {
+            "path": [
+              0,
+              1,
+              1
+            ],
+            "value": 9
+          },
+          {
+            "path": [
+              1,
+              0,
+              0
+            ],
+            "value": 6
+          },
+          {
+            "path": [
+              1,
+              0,
+              1
+            ],
+            "value": 9
+          },
+          {
+            "path": [
+              1,
+              1,
+              0
+            ],
+            "value": 1
+          },
+          {
+            "path": [
+              1,
+              1,
+              1
+            ],
+            "value": 2
+          }
+        ],
+        "pruning_events": []
+      },
+      "alpha_beta": {
+        "value": 5,
+        "seconds": 2.1200001356191933e-05,
+        "nodes": 14,
+        "leaf_evaluations": 7,
+        "cutoffs": 1,
+        "leaves": [
+          {
+            "path": [
+              0,
+              0,
+              0
+            ],
+            "value": 3
+          },
+          {
+            "path": [
+              0,
+              0,
+              1
+            ],
+            "value": 5
+          },
+          {
+            "path": [
+              0,
+              1,
+              0
+            ],
+            "value": 6
+          },
+          {
+            "path": [
+              1,
+              0,
+              0
+            ],
+            "value": 6
+          },
+          {
+            "path": [
+              1,
+              0,
+              1
+            ],
+            "value": 9
+          },
+          {
+            "path": [
+              1,
+              1,
+              0
+            ],
+            "value": 1
+          },
+          {
+            "path": [
+              1,
+              1,
+              1
+            ],
+            "value": 2
+          }
+        ],
+        "pruning_events": [
+          {
+            "path": [
+              0,
+              1
+            ],
+            "alpha": 6,
+            "beta": 5,
+            "skipped": [
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "single_leaf",
+      "expected": -7,
+      "hand_calculation": "single leaf = -7",
+      "public_value": -7,
+      "minimax": {
+        "value": -7,
+        "seconds": 1.7999991541728377e-06,
+        "nodes": 1,
+        "leaf_evaluations": 1,
+        "cutoffs": 0,
+        "leaves": [
+          {
+            "path": [],
+            "value": -7
+          }
+        ],
+        "pruning_events": []
+      },
+      "alpha_beta": {
+        "value": -7,
+        "seconds": 1.100008375942707e-06,
+        "nodes": 1,
+        "leaf_evaluations": 1,
+        "cutoffs": 0,
+        "leaves": [
+          {
+            "path": [],
+            "value": -7
+          }
+        ],
+        "pruning_events": []
+      }
+    },
+    {
+      "name": "unbalanced",
+      "expected": 6,
+      "hand_calculation": "max(min(8,max(2,6)),min(4,max(-3,min(7,1)))) = max(6,1) = 6",
+      "public_value": 6,
+      "minimax": {
+        "value": 6,
+        "seconds": 1.7700003809295595e-05,
+        "nodes": 13,
+        "leaf_evaluations": 7,
+        "cutoffs": 0,
+        "leaves": [
+          {
+            "path": [
+              0,
+              0
+            ],
+            "value": 8
+          },
+          {
+            "path": [
+              0,
+              1,
+              0
+            ],
+            "value": 2
+          },
+          {
+            "path": [
+              0,
+              1,
+              1
+            ],
+            "value": 6
+          },
+          {
+            "path": [
+              1,
+              0
+            ],
+            "value": 4
+          },
+          {
+            "path": [
+              1,
+              1,
+              0
+            ],
+            "value": -3
+          },
+          {
+            "path": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "value": 7
+          },
+          {
+            "path": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "value": 1
+          }
+        ],
+        "pruning_events": []
+      },
+      "alpha_beta": {
+        "value": 6,
+        "seconds": 1.3500000932253897e-05,
+        "nodes": 8,
+        "leaf_evaluations": 4,
+        "cutoffs": 1,
+        "leaves": [
+          {
+            "path": [
+              0,
+              0
+            ],
+            "value": 8
+          },
+          {
+            "path": [
+              0,
+              1,
+              0
+            ],
+            "value": 2
+          },
+          {
+            "path": [
+              0,
+              1,
+              1
+            ],
+            "value": 6
+          },
+          {
+            "path": [
+              1,
+              0
+            ],
+            "value": 4
+          }
+        ],
+        "pruning_events": [
+          {
+            "path": [
+              1
+            ],
+            "alpha": 6,
+            "beta": 4,
+            "skipped": [
+              1
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

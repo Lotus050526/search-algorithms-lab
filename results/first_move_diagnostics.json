@@ -1,0 +1,545 @@
+{
+  "tie_rule": "原顺序T1,T2,T3,T4；严格改善才更新，故并列取第一个。每个首步独立完整Minimax；计数不混入效率实验。",
+  "branches": {
+    "2": {
+      "T1": {
+        "exact_value": -4,
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T1",
+            "movement_cost": 10,
+            "value": 9,
+            "gain": -1,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T1",
+              "b": "B",
+              "remaining": [
+                "T2",
+                "T3",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T3",
+            "movement_cost": 4,
+            "value": 7,
+            "gain": 3,
+            "cumulative_u": -4,
+            "state_after": {
+              "a": "T1",
+              "b": "T3",
+              "remaining": [
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 3,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ]
+      },
+      "T2": {
+        "exact_value": -1,
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T2",
+            "movement_cost": 4,
+            "value": 6,
+            "gain": 2,
+            "cumulative_u": 2,
+            "state_after": {
+              "a": "T2",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T3",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T3",
+            "movement_cost": 4,
+            "value": 7,
+            "gain": 3,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T2",
+              "b": "T3",
+              "remaining": [
+                "T1",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 3,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ]
+      },
+      "T3": {
+        "exact_value": -2,
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T3",
+            "movement_cost": 8,
+            "value": 7,
+            "gain": -1,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T3",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T1",
+            "movement_cost": 8,
+            "value": 9,
+            "gain": 1,
+            "cumulative_u": -2,
+            "state_after": {
+              "a": "T3",
+              "b": "T1",
+              "remaining": [
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 1,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ]
+      },
+      "T4": {
+        "exact_value": -4,
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T4",
+            "movement_cost": 8,
+            "value": 7,
+            "gain": -1,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T4",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T3"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T3",
+            "movement_cost": 4,
+            "value": 7,
+            "gain": 3,
+            "cumulative_u": -4,
+            "state_after": {
+              "a": "T4",
+              "b": "T3",
+              "remaining": [
+                "T1",
+                "T2"
+              ],
+              "score_a": -1,
+              "score_b": 3,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ]
+      }
+    },
+    "4": {
+      "T1": {
+        "exact_value": -5,
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T1",
+            "movement_cost": 10,
+            "value": 9,
+            "gain": -1,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T1",
+              "b": "B",
+              "remaining": [
+                "T2",
+                "T3",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T3",
+            "movement_cost": 4,
+            "value": 7,
+            "gain": 3,
+            "cumulative_u": -4,
+            "state_after": {
+              "a": "T1",
+              "b": "T3",
+              "remaining": [
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 3,
+              "player": "A",
+              "depth": 2
+            }
+          },
+          {
+            "player": "A",
+            "origin": "T1",
+            "target": "T2",
+            "movement_cost": 6,
+            "value": 6,
+            "gain": 0,
+            "cumulative_u": -4,
+            "state_after": {
+              "a": "T2",
+              "b": "T3",
+              "remaining": [
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 3,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "T3",
+            "target": "T4",
+            "movement_cost": 6,
+            "value": 7,
+            "gain": 1,
+            "cumulative_u": -5,
+            "state_after": {
+              "a": "T2",
+              "b": "T4",
+              "remaining": [],
+              "score_a": -1,
+              "score_b": 4,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ]
+      },
+      "T2": {
+        "exact_value": 1,
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T2",
+            "movement_cost": 4,
+            "value": 6,
+            "gain": 2,
+            "cumulative_u": 2,
+            "state_after": {
+              "a": "T2",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T3",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T3",
+            "movement_cost": 4,
+            "value": 7,
+            "gain": 3,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T2",
+              "b": "T3",
+              "remaining": [
+                "T1",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 3,
+              "player": "A",
+              "depth": 2
+            }
+          },
+          {
+            "player": "A",
+            "origin": "T2",
+            "target": "T1",
+            "movement_cost": 6,
+            "value": 9,
+            "gain": 3,
+            "cumulative_u": 2,
+            "state_after": {
+              "a": "T1",
+              "b": "T3",
+              "remaining": [
+                "T4"
+              ],
+              "score_a": 5,
+              "score_b": 3,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "T3",
+            "target": "T4",
+            "movement_cost": 6,
+            "value": 7,
+            "gain": 1,
+            "cumulative_u": 1,
+            "state_after": {
+              "a": "T1",
+              "b": "T4",
+              "remaining": [],
+              "score_a": 5,
+              "score_b": 4,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ]
+      },
+      "T3": {
+        "exact_value": 3,
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T3",
+            "movement_cost": 8,
+            "value": 7,
+            "gain": -1,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T3",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T1",
+            "movement_cost": 8,
+            "value": 9,
+            "gain": 1,
+            "cumulative_u": -2,
+            "state_after": {
+              "a": "T3",
+              "b": "T1",
+              "remaining": [
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 1,
+              "player": "A",
+              "depth": 2
+            }
+          },
+          {
+            "player": "A",
+            "origin": "T3",
+            "target": "T2",
+            "movement_cost": 6,
+            "value": 6,
+            "gain": 0,
+            "cumulative_u": -2,
+            "state_after": {
+              "a": "T2",
+              "b": "T1",
+              "remaining": [
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 1,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "T1",
+            "target": "T4",
+            "movement_cost": 12,
+            "value": 7,
+            "gain": -5,
+            "cumulative_u": 3,
+            "state_after": {
+              "a": "T2",
+              "b": "T4",
+              "remaining": [],
+              "score_a": -1,
+              "score_b": -4,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ]
+      },
+      "T4": {
+        "exact_value": -7,
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T4",
+            "movement_cost": 8,
+            "value": 7,
+            "gain": -1,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T4",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T3"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T3",
+            "movement_cost": 4,
+            "value": 7,
+            "gain": 3,
+            "cumulative_u": -4,
+            "state_after": {
+              "a": "T4",
+              "b": "T3",
+              "remaining": [
+                "T1",
+                "T2"
+              ],
+              "score_a": -1,
+              "score_b": 3,
+              "player": "A",
+              "depth": 2
+            }
+          },
+          {
+            "player": "A",
+            "origin": "T4",
+            "target": "T1",
+            "movement_cost": 12,
+            "value": 9,
+            "gain": -3,
+            "cumulative_u": -7,
+            "state_after": {
+              "a": "T1",
+              "b": "T3",
+              "remaining": [
+                "T2"
+              ],
+              "score_a": -4,
+              "score_b": 3,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "T3",
+            "target": "T2",
+            "movement_cost": 6,
+            "value": 6,
+            "gain": 0,
+            "cumulative_u": -7,
+            "state_after": {
+              "a": "T1",
+              "b": "T2",
+              "remaining": [],
+              "score_a": -4,
+              "score_b": 3,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

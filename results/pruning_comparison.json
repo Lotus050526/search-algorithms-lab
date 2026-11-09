@@ -1,0 +1,1256 @@
+{
+  "tree": {
+    "minimax": {
+      "value": 5,
+      "seconds": 3.880000440403819e-05,
+      "nodes": 15,
+      "leaf_evaluations": 8,
+      "cutoffs": 0,
+      "leaves": [
+        {
+          "path": [
+            0,
+            0,
+            0
+          ],
+          "value": 3
+        },
+        {
+          "path": [
+            0,
+            0,
+            1
+          ],
+          "value": 5
+        },
+        {
+          "path": [
+            0,
+            1,
+            0
+          ],
+          "value": 6
+        },
+        {
+          "path": [
+            0,
+            1,
+            1
+          ],
+          "value": 9
+        },
+        {
+          "path": [
+            1,
+            0,
+            0
+          ],
+          "value": 6
+        },
+        {
+          "path": [
+            1,
+            0,
+            1
+          ],
+          "value": 9
+        },
+        {
+          "path": [
+            1,
+            1,
+            0
+          ],
+          "value": 1
+        },
+        {
+          "path": [
+            1,
+            1,
+            1
+          ],
+          "value": 2
+        }
+      ],
+      "pruning_events": []
+    },
+    "alpha_beta": {
+      "value": 5,
+      "seconds": 3.239999932702631e-05,
+      "nodes": 14,
+      "leaf_evaluations": 7,
+      "cutoffs": 1,
+      "leaves": [
+        {
+          "path": [
+            0,
+            0,
+            0
+          ],
+          "value": 3
+        },
+        {
+          "path": [
+            0,
+            0,
+            1
+          ],
+          "value": 5
+        },
+        {
+          "path": [
+            0,
+            1,
+            0
+          ],
+          "value": 6
+        },
+        {
+          "path": [
+            1,
+            0,
+            0
+          ],
+          "value": 6
+        },
+        {
+          "path": [
+            1,
+            0,
+            1
+          ],
+          "value": 9
+        },
+        {
+          "path": [
+            1,
+            1,
+            0
+          ],
+          "value": 1
+        },
+        {
+          "path": [
+            1,
+            1,
+            1
+          ],
+          "value": 2
+        }
+      ],
+      "pruning_events": [
+        {
+          "path": [
+            0,
+            1
+          ],
+          "alpha": 6,
+          "beta": 5,
+          "skipped": [
+            1
+          ]
+        }
+      ]
+    },
+    "reverse": {
+      "value": 5,
+      "seconds": 2.9799994081258774e-05,
+      "nodes": 14,
+      "leaf_evaluations": 7,
+      "cutoffs": 1,
+      "leaves": [
+        {
+          "path": [
+            1,
+            1,
+            1
+          ],
+          "value": 2
+        },
+        {
+          "path": [
+            1,
+            1,
+            0
+          ],
+          "value": 1
+        },
+        {
+          "path": [
+            1,
+            0,
+            1
+          ],
+          "value": 9
+        },
+        {
+          "path": [
+            0,
+            1,
+            1
+          ],
+          "value": 9
+        },
+        {
+          "path": [
+            0,
+            1,
+            0
+          ],
+          "value": 6
+        },
+        {
+          "path": [
+            0,
+            0,
+            1
+          ],
+          "value": 5
+        },
+        {
+          "path": [
+            0,
+            0,
+            0
+          ],
+          "value": 3
+        }
+      ],
+      "pruning_events": [
+        {
+          "path": [
+            1,
+            0
+          ],
+          "alpha": 9,
+          "beta": 2,
+          "skipped": [
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "game": {
+    "2": {
+      "minimax": {
+        "value": -1,
+        "best_target": "T2",
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T2",
+            "movement_cost": 4,
+            "value": 6,
+            "gain": 2,
+            "cumulative_u": 2,
+            "state_after": {
+              "a": "T2",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T3",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T3",
+            "movement_cost": 4,
+            "value": 7,
+            "gain": 3,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T2",
+              "b": "T3",
+              "remaining": [
+                "T1",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 3,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ],
+        "seconds": 0.0002682000049389899,
+        "nodes": 17,
+        "leaf_evaluations": 12,
+        "cutoffs": 0,
+        "pruning_events": []
+      },
+      "alpha_beta": {
+        "value": -1,
+        "best_target": "T2",
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T2",
+            "movement_cost": 4,
+            "value": 6,
+            "gain": 2,
+            "cumulative_u": 2,
+            "state_after": {
+              "a": "T2",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T3",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T3",
+            "movement_cost": 4,
+            "value": 7,
+            "gain": 3,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T2",
+              "b": "T3",
+              "remaining": [
+                "T1",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 3,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ],
+        "seconds": 0.0005619000003207475,
+        "nodes": 13,
+        "leaf_evaluations": 8,
+        "cutoffs": 2,
+        "pruning_events": [
+          {
+            "state": {
+              "a": "T3",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            },
+            "alpha": -1,
+            "beta": -2,
+            "skipped": [
+              "T2",
+              "T4"
+            ]
+          },
+          {
+            "state": {
+              "a": "T4",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T3"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            },
+            "alpha": -1,
+            "beta": -2,
+            "skipped": [
+              "T2",
+              "T3"
+            ]
+          }
+        ]
+      },
+      "reverse": {
+        "value": -1,
+        "best_target": "T2",
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T2",
+            "movement_cost": 4,
+            "value": 6,
+            "gain": 2,
+            "cumulative_u": 2,
+            "state_after": {
+              "a": "T2",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T3",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T3",
+            "movement_cost": 4,
+            "value": 7,
+            "gain": 3,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T2",
+              "b": "T3",
+              "remaining": [
+                "T1",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 3,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ],
+        "seconds": 0.00020170000789221376,
+        "nodes": 16,
+        "leaf_evaluations": 11,
+        "cutoffs": 1,
+        "pruning_events": [
+          {
+            "state": {
+              "a": "T1",
+              "b": "B",
+              "remaining": [
+                "T2",
+                "T3",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            },
+            "alpha": -1,
+            "beta": -4,
+            "skipped": [
+              "T2"
+            ]
+          }
+        ]
+      },
+      "gain": {
+        "value": -1,
+        "best_target": "T2",
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T2",
+            "movement_cost": 4,
+            "value": 6,
+            "gain": 2,
+            "cumulative_u": 2,
+            "state_after": {
+              "a": "T2",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T3",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T3",
+            "movement_cost": 4,
+            "value": 7,
+            "gain": 3,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T2",
+              "b": "T3",
+              "remaining": [
+                "T1",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 3,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ],
+        "seconds": 0.00017889999435283244,
+        "nodes": 11,
+        "leaf_evaluations": 6,
+        "cutoffs": 3,
+        "pruning_events": [
+          {
+            "state": {
+              "a": "T1",
+              "b": "B",
+              "remaining": [
+                "T2",
+                "T3",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            },
+            "alpha": -1,
+            "beta": -4,
+            "skipped": [
+              "T2",
+              "T4"
+            ]
+          },
+          {
+            "state": {
+              "a": "T3",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            },
+            "alpha": -1,
+            "beta": -2,
+            "skipped": [
+              "T2",
+              "T4"
+            ]
+          },
+          {
+            "state": {
+              "a": "T4",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T3"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 1
+            },
+            "alpha": -1,
+            "beta": -4,
+            "skipped": [
+              "T1",
+              "T2"
+            ]
+          }
+        ]
+      }
+    },
+    "4": {
+      "minimax": {
+        "value": 3,
+        "best_target": "T3",
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T3",
+            "movement_cost": 8,
+            "value": 7,
+            "gain": -1,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T3",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T1",
+            "movement_cost": 8,
+            "value": 9,
+            "gain": 1,
+            "cumulative_u": -2,
+            "state_after": {
+              "a": "T3",
+              "b": "T1",
+              "remaining": [
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 1,
+              "player": "A",
+              "depth": 2
+            }
+          },
+          {
+            "player": "A",
+            "origin": "T3",
+            "target": "T2",
+            "movement_cost": 6,
+            "value": 6,
+            "gain": 0,
+            "cumulative_u": -2,
+            "state_after": {
+              "a": "T2",
+              "b": "T1",
+              "remaining": [
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 1,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "T1",
+            "target": "T4",
+            "movement_cost": 12,
+            "value": 7,
+            "gain": -5,
+            "cumulative_u": 3,
+            "state_after": {
+              "a": "T2",
+              "b": "T4",
+              "remaining": [],
+              "score_a": -1,
+              "score_b": -4,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ],
+        "seconds": 0.0007790999952703714,
+        "nodes": 65,
+        "leaf_evaluations": 24,
+        "cutoffs": 0,
+        "pruning_events": []
+      },
+      "alpha_beta": {
+        "value": 3,
+        "best_target": "T3",
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T3",
+            "movement_cost": 8,
+            "value": 7,
+            "gain": -1,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T3",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T1",
+            "movement_cost": 8,
+            "value": 9,
+            "gain": 1,
+            "cumulative_u": -2,
+            "state_after": {
+              "a": "T3",
+              "b": "T1",
+              "remaining": [
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 1,
+              "player": "A",
+              "depth": 2
+            }
+          },
+          {
+            "player": "A",
+            "origin": "T3",
+            "target": "T2",
+            "movement_cost": 6,
+            "value": 6,
+            "gain": 0,
+            "cumulative_u": -2,
+            "state_after": {
+              "a": "T2",
+              "b": "T1",
+              "remaining": [
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 1,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "T1",
+            "target": "T4",
+            "movement_cost": 12,
+            "value": 7,
+            "gain": -5,
+            "cumulative_u": 3,
+            "state_after": {
+              "a": "T2",
+              "b": "T4",
+              "remaining": [],
+              "score_a": -1,
+              "score_b": -4,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ],
+        "seconds": 0.0006177000032039359,
+        "nodes": 47,
+        "leaf_evaluations": 16,
+        "cutoffs": 5,
+        "pruning_events": [
+          {
+            "state": {
+              "a": "T1",
+              "b": "T4",
+              "remaining": [
+                "T2",
+                "T3"
+              ],
+              "score_a": -1,
+              "score_b": -3,
+              "player": "A",
+              "depth": 2
+            },
+            "alpha": 1,
+            "beta": -5,
+            "skipped": [
+              "T3"
+            ]
+          },
+          {
+            "state": {
+              "a": "T2",
+              "b": "T4",
+              "remaining": [
+                "T1",
+                "T3"
+              ],
+              "score_a": 2,
+              "score_b": -3,
+              "player": "A",
+              "depth": 2
+            },
+            "alpha": 7,
+            "beta": 1,
+            "skipped": [
+              "T3"
+            ]
+          },
+          {
+            "state": {
+              "a": "T3",
+              "b": "T2",
+              "remaining": [
+                "T1",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": -2,
+              "player": "A",
+              "depth": 2
+            },
+            "alpha": 3,
+            "beta": 3,
+            "skipped": [
+              "T4"
+            ]
+          },
+          {
+            "state": {
+              "a": "T3",
+              "b": "T4",
+              "remaining": [
+                "T1",
+                "T2"
+              ],
+              "score_a": -1,
+              "score_b": -3,
+              "player": "A",
+              "depth": 2
+            },
+            "alpha": 5,
+            "beta": 3,
+            "skipped": [
+              "T2"
+            ]
+          },
+          {
+            "state": {
+              "a": "T4",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T3"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            },
+            "alpha": 3,
+            "beta": -1,
+            "skipped": [
+              "T2",
+              "T3"
+            ]
+          }
+        ]
+      },
+      "reverse": {
+        "value": 3,
+        "best_target": "T3",
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T3",
+            "movement_cost": 8,
+            "value": 7,
+            "gain": -1,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T3",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T2",
+            "movement_cost": 8,
+            "value": 6,
+            "gain": -2,
+            "cumulative_u": 1,
+            "state_after": {
+              "a": "T3",
+              "b": "T2",
+              "remaining": [
+                "T1",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": -2,
+              "player": "A",
+              "depth": 2
+            }
+          },
+          {
+            "player": "A",
+            "origin": "T3",
+            "target": "T1",
+            "movement_cost": 6,
+            "value": 9,
+            "gain": 3,
+            "cumulative_u": 4,
+            "state_after": {
+              "a": "T1",
+              "b": "T2",
+              "remaining": [
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": -2,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "T2",
+            "target": "T4",
+            "movement_cost": 6,
+            "value": 7,
+            "gain": 1,
+            "cumulative_u": 3,
+            "state_after": {
+              "a": "T1",
+              "b": "T4",
+              "remaining": [],
+              "score_a": 2,
+              "score_b": -1,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ],
+        "seconds": 0.0005687999946530908,
+        "nodes": 46,
+        "leaf_evaluations": 16,
+        "cutoffs": 4,
+        "pruning_events": [
+          {
+            "state": {
+              "a": "T4",
+              "b": "T2",
+              "remaining": [
+                "T1",
+                "T3"
+              ],
+              "score_a": -1,
+              "score_b": -2,
+              "player": "A",
+              "depth": 2
+            },
+            "alpha": -1,
+            "beta": -7,
+            "skipped": [
+              "T1"
+            ]
+          },
+          {
+            "state": {
+              "a": "T4",
+              "b": "T1",
+              "remaining": [
+                "T2",
+                "T3"
+              ],
+              "score_a": -1,
+              "score_b": 1,
+              "player": "A",
+              "depth": 2
+            },
+            "alpha": -1,
+            "beta": -7,
+            "skipped": [
+              "T2"
+            ]
+          },
+          {
+            "state": {
+              "a": "T2",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T3",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            },
+            "alpha": 3,
+            "beta": 1,
+            "skipped": [
+              "T1"
+            ]
+          },
+          {
+            "state": {
+              "a": "T1",
+              "b": "B",
+              "remaining": [
+                "T2",
+                "T3",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            },
+            "alpha": 3,
+            "beta": 3,
+            "skipped": [
+              "T3",
+              "T2"
+            ]
+          }
+        ]
+      },
+      "gain": {
+        "value": 3,
+        "best_target": "T3",
+        "line": [
+          {
+            "player": "A",
+            "origin": "A",
+            "target": "T3",
+            "movement_cost": 8,
+            "value": 7,
+            "gain": -1,
+            "cumulative_u": -1,
+            "state_after": {
+              "a": "T3",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            }
+          },
+          {
+            "player": "B",
+            "origin": "B",
+            "target": "T1",
+            "movement_cost": 8,
+            "value": 9,
+            "gain": 1,
+            "cumulative_u": -2,
+            "state_after": {
+              "a": "T3",
+              "b": "T1",
+              "remaining": [
+                "T2",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 1,
+              "player": "A",
+              "depth": 2
+            }
+          },
+          {
+            "player": "A",
+            "origin": "T3",
+            "target": "T2",
+            "movement_cost": 6,
+            "value": 6,
+            "gain": 0,
+            "cumulative_u": -2,
+            "state_after": {
+              "a": "T2",
+              "b": "T1",
+              "remaining": [
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 1,
+              "player": "B",
+              "depth": 1
+            }
+          },
+          {
+            "player": "B",
+            "origin": "T1",
+            "target": "T4",
+            "movement_cost": 12,
+            "value": 7,
+            "gain": -5,
+            "cumulative_u": 3,
+            "state_after": {
+              "a": "T2",
+              "b": "T4",
+              "remaining": [],
+              "score_a": -1,
+              "score_b": -4,
+              "player": "A",
+              "depth": 0
+            }
+          }
+        ],
+        "seconds": 0.0005302000063238665,
+        "nodes": 37,
+        "leaf_evaluations": 12,
+        "cutoffs": 6,
+        "pruning_events": [
+          {
+            "state": {
+              "a": "T2",
+              "b": "T1",
+              "remaining": [
+                "T3",
+                "T4"
+              ],
+              "score_a": 2,
+              "score_b": 1,
+              "player": "A",
+              "depth": 2
+            },
+            "alpha": 7,
+            "beta": 1,
+            "skipped": [
+              "T4"
+            ]
+          },
+          {
+            "state": {
+              "a": "T2",
+              "b": "T4",
+              "remaining": [
+                "T1",
+                "T3"
+              ],
+              "score_a": 2,
+              "score_b": -3,
+              "player": "A",
+              "depth": 2
+            },
+            "alpha": 7,
+            "beta": 1,
+            "skipped": [
+              "T3"
+            ]
+          },
+          {
+            "state": {
+              "a": "T1",
+              "b": "B",
+              "remaining": [
+                "T2",
+                "T3",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            },
+            "alpha": 1,
+            "beta": -5,
+            "skipped": [
+              "T2",
+              "T4"
+            ]
+          },
+          {
+            "state": {
+              "a": "T3",
+              "b": "T2",
+              "remaining": [
+                "T1",
+                "T4"
+              ],
+              "score_a": -1,
+              "score_b": -2,
+              "player": "A",
+              "depth": 2
+            },
+            "alpha": 3,
+            "beta": 3,
+            "skipped": [
+              "T4"
+            ]
+          },
+          {
+            "state": {
+              "a": "T3",
+              "b": "T4",
+              "remaining": [
+                "T1",
+                "T2"
+              ],
+              "score_a": -1,
+              "score_b": -3,
+              "player": "A",
+              "depth": 2
+            },
+            "alpha": 5,
+            "beta": 3,
+            "skipped": [
+              "T2"
+            ]
+          },
+          {
+            "state": {
+              "a": "T4",
+              "b": "B",
+              "remaining": [
+                "T1",
+                "T2",
+                "T3"
+              ],
+              "score_a": -1,
+              "score_b": 0,
+              "player": "B",
+              "depth": 3
+            },
+            "alpha": 3,
+            "beta": -7,
+            "skipped": [
+              "T1",
+              "T2"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "nodes": "每次递归进入，包括根与叶",
+    "leaf_evaluations": "深度耗尽或无剩余宝藏时评价当前U",
+    "cutoffs": "alpha>=beta且确有尚未访问的后续子分支时计一次",
+    "gain_order": "当前玩家 value-distance 降序，稳定同分按T1到T4；不调用Minimax排序",
+    "time": "perf_counter单次测量，仅辅助"
+  }
+}
